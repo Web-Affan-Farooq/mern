@@ -1,0 +1,22 @@
+in this lesson we have to create a webserver which hosts static files on our localhost
+ 1. install express
+ 2. middleware and app.use method:
+
+ after importing all the packages we have to server our static website using express so 
+ create a method called app.use() and inside of this use express.static() method . This method is the best way to server static files using our local server which takes foldername as an argument and serve all the files in that folder as a static website. IN real life projects . we have to two different folders in our project root where one contain frontend files and other contains the backend files. the folder which have our frontend is usually named as public and second is src.
+
+ 3. serving static files :
+  create a directory and shift all the files you want to serve as frontend and then in the backend file write the code . Your code should look like this
+
+   const app = express();
+   app.use(express.static(FRONTEND_FOLDER_NAME));
+
+4. http methods:
+get-- get content from server
+post -- send some data to server
+put -- store data on server
+patch -- update data on server
+delete -- delete simultaneously
+
+4. Middleware: 
+Middleware is any kind of function that trigger on each request and perform some operations like user authentication or any other function before sending response

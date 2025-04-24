@@ -1,0 +1,22 @@
+#### READ THE FOLLOWING FILE CAREFULLY
+
+
+const express = require('express');
+
+const PORT = process.env.PORT || 5500;
+
+const app = express();
+
+app.use(express.static('public'));
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT} for 20 seconds`);
+});
+setTimeout(() => {
+    console.log("server is now not available");
+    process.exit();
+}, 20000);
+
+
+// Application-level middleware
+

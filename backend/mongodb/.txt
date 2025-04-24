@@ -1,0 +1,18 @@
+introduction to mongodb:
+
+There are two servers that serves for our application
+1.application server.
+2.database server.
+
+application server serves as the main routes . It accepts main request directly from frontend while database serves as main storage for application data . 
+
+database -> colllections -> document
+
+mongooose.connect -> create database
+model create ->  collection
+CREATE -> document
+
+Step -1 :
+create new project  -- npm init -y
+install expressjs  --- npm i express
+install mongoose   --- npm install mongoose

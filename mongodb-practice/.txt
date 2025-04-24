@@ -1,0 +1,5 @@
+mongodb :
+
+1. mongodb is a NOSQL database
+2. it stores data in BSON format
+installation

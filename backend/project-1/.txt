@@ -1,0 +1,17 @@
+express 
+setup expressjs
+routes
+middleware
+
+--------------------------Rest APi ------------------------------
+
+json restAPI
+
+get/users - list all users
+get/user/1 - get the user with id 1;
+
+POST / user - create new user
+
+ patch/user/1 -- edit user with id 1
+
+ delete / user/1 - delete user 1

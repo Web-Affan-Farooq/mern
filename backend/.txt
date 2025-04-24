@@ -1,0 +1,63 @@
+we've get OS information
+we used path object i.e
+we used commonjs/ecma script modules
+
+fs: (const fs = require('fs'));
+
+readFiles :
+ ----callback:
+
+ fs.readFile("file__name",fileData,"encoding",(err)=> {
+    if(err) throw err;
+    console.log(fileData.toString()); // never forget to change data format from binary to string
+})
+
+---- async/await:
+const fsPromises = require('fs').Promises
+
+const function = async() => {
+    try {
+        let data = 
+    }
+    catch(err) {
+        console.log(err)
+    }
+}
+
+
+writeFiles
+ ----callback:
+
+ fs.readFile("file__name",fileData,"encoding",(err)=> {
+    if(err) throw err;
+    console.log(fileData.toString()); // never forget to change data format from binary to string
+})
+
+---- async/await:
+const fsPromises = require('fs').Promises
+
+const function = async() => {
+    try {
+        let data = 
+    }
+    catch(err) {
+        console.log(err)
+    }
+}
+update files  (fs.append method)
+createFiles (use write file)
+createfolders(fs.mkdir())
+
+--------------------- nodemon --------------------
+used for start server automatically
+
+--------------------- date-fns ------------------------
+use to format date
+
+--------------------- uuid-----------------
+use for generating id's
+
+-------------------------------------------created a web server -----------------------------------------
+http module
+url module(npm package);
+http methods

@@ -1,0 +1,7 @@
+ in this folder we have learned form handling in backend
+  first install cookie-parser npm package
+
+ cookie parser = https://www.npmjs.com/package/cookie-parser
+
+setup ejs templating engine
+npm i ejs

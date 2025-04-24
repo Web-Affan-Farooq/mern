@@ -1,0 +1,53 @@
+using http module :
+using expressjs
+using ejs : -----------------------------------------
+1. create views folder
+
+2. create html pages with ejs extension
+
+3. app.set("view engine" , "ejs");   //setup ejs
+
+4. use app.render("filename without extension")
+
+5. for passing data to ejs pages
+use app.render("filename without extension", {dataString:"example string"}) 
+
+6. attach this data dynamically to ejs file:
+<div><%=dataString%></div>
+
+
+using middlewares: ---------------------------------------------
+app.use(middleware name);
+
+common builtin middlewares: -----------------------------------
+app.use(express.static("public")) ; for serving static files
+app.use(express.urlencoded({extended:true}));  for recieving form data
+app.use(express.json()); for recieving json form data
+
+using thirdparty middlewares (morgan): ----------------------------
+morgan is the logger
+import morgan then use it .
+
+app.use(morgan('dev'));
+
+
+installation mongodb and mongodb compass: -------------------------
+install mongoose package
+create folder named models
+create file for schema and import mongoose in in it 
+create schema function
+
+const exampleSchema = new mongoose.Schema(
+    {
+        userName:String,
+        age:Number,
+        isOnline:Boolean,
+        gender: {
+            type:String,
+            enum: ['Male', 'Female]
+        }
+    }
+);
+create a model function
+
+const exampleModel = new mongoose.model('example_model', exampleSchema);
